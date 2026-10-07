@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CreoleCast Support</title>
+<meta name="description" content="Help with CreoleCast: finding your PC, smooth streaming, the cable, and how to reach us.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="img/icon-180.png" sizes="180x180" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta name="theme-color" content="#121417">
+</head>
+<body>
+<header>
+  <a class="brand" href="./"><img src="img/headset-small.png" alt="" width="40" height="26"> CreoleCast</a>
+  <nav>
+    <a href="./#download">Download</a>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="https://discord.gg/XJzeZBkf7q">Discord</a>
+  </nav>
+</header>
+<main class="prose">
+  <h1>Support</h1>
+
+  <h2>The headset doesn't find my PC</h2>
+  <ul>
+    <li>Install CreoleCast on the PC (<a href="./#download">download</a>). It starts with Windows; open it from the Start menu, and its window shows what's still missing, step by step.</li>
+    <li>The headset and the PC need the same network: the same router, not its guest network, which keeps devices apart.</li>
+    <li>A VPN on the headset or the PC can hide them from each other. Turn it off while you stream, or let it pass local traffic.</li>
+    <li>Windows Firewall lets CreoleCast in when it installs. A different firewall or security suite has to allow <code>CreoleCast.exe</code> and SteamVR (<code>vrserver.exe</code>) on UDP and TCP port 29451.</li>
+  </ul>
+
+  <h2>Pairing</h2>
+  <p>Pick <b>Pair</b> next to your PC in the headset's menu. A window opens on the PC with a six-digit code. If the headset shows the same code, allow it on both. You pair once; to undo it, use <b>Forget</b> on the headset or in the CreoleCast icon's menu on the PC.</p>
+
+  <h2>Smooth streaming over Wi-Fi</h2>
+  <ul>
+    <li>Use the router's 5 or 6 GHz band. On 2.4 GHz the picture can't keep up.</li>
+    <li>Keep the router in the same room as you, with a clear line to the headset.</li>
+    <li>Plug the PC into the router with an Ethernet cable, so the Wi-Fi only carries the headset.</li>
+    <li>If it stutters, open the headset's menu (double tap the menu button on the left controller), then <b>Stream</b>: test the Wi-Fi there, or lower the resolution.</li>
+  </ul>
+
+  <h2>The USB cable</h2>
+  <p>Plug the headset into the PC, then press <b>Connect</b> under <b>Cable</b> in the headset's menu, and allow USB connections when the headset asks. A USB 3 port and cable give the best picture.</p>
+
+  <h2>Sound and microphone</h2>
+  <p>The headset's sound and microphone go through Steam's streaming speakers and microphone, which the installer sets up. While the headset is connected, CreoleCast makes them Windows' output and input, and it puts yours back when the headset goes. To keep your own, turn off <b>Set default speakers</b> or <b>Set default microphone</b> in CreoleCast on the PC. No sound? Open CreoleCast on the PC: <b>Headset sound</b> has an <b>Install them</b> button when they're missing.</p>
+
+  <h2>Colors</h2>
+  <p>Open the <b>Color</b> tab in the headset's menu, or in CreoleCast on the PC. <b>Accurate</b> shows the colors your PC renders; <b>Vivid</b> stretches them over the display's wider range. Gamma, vibrance and color balance (red, green and blue) are there too, and <b>Reset</b> puts them back.</p>
+
+  <h2>SteamVR</h2>
+  <p>Pressing <b>Connect</b> in the headset's menu starts SteamVR on the PC. To start it yourself instead, turn off <b>Start SteamVR by itself</b> in CreoleCast on the PC; <b>Start SteamVR</b> in the headset's menu or in CreoleCast's window still starts it.</p>
+
+  <h2>Hand tracking</h2>
+  <p>Put the controllers down and your hands take over in SteamVR: your fingers move your avatar's, a pinch (thumb and index finger) is the trigger, and a fist is the grip, for grabbing. The menu gesture with your left hand, twice (palm toward you, pinch), opens CreoleCast's menu; games have their own ways to open theirs with hands (in VRChat, the button on your wrist). Pick the controllers up again and they take over. It's on by default: turn it off with <b>Hand tracking</b> in the headset's CreoleCast settings. Hand tracking has to be on in the headset's own settings (Movement tracking).</p>
+  <h2>Index or other controllers</h2>
+  <p>Turn off <b>Controllers</b> in the headset's CreoleCast settings. SteamVR then gets only your other controllers, not the headset's controllers or hands. The headset's controllers still work in CreoleCast's menu.</p>
+  <h2>Controller smoothing tools</h2>
+  <p>Using OpenVR-SmoothTracking or a similar tool? Turn off <b>Predict controllers on the headset</b> in CreoleCast on the PC, so SteamVR predicts the controllers and the tool has something to smooth.</p>
+  <h2>Full-body tracking</h2>
+  <p>Turn on <b>Body tracking</b> in the headset's CreoleCast settings, allow it, and pick which parts SteamVR gets: hips, chest, elbows, knees and feet. They show up as SteamVR trackers, which full-body games such as VRChat use like any others. Hand and body tracking have to be on in the headset's own settings (Movement tracking). The legs come from Meta's body tracking, which estimates them from how the rest of you moves.</p>
+
+  <h2>Updates</h2>
+  <p>CreoleCast on the PC checks for updates once a day and installs them by itself while SteamVR isn't running (<b>Update automatically</b>, in its icon's menu). The headset app updates from the Store. The two have to match: if the headset's is newer, pressing Connect updates the PC first and then starts SteamVR; if the PC's is newer, the headset says to update it in the Store (Library, Updates).</p>
+
+  <h2>Contact us</h2>
+  <p>Email <a href="mailto:creolevr@gmail.com">creolevr@gmail.com</a> with what happened, your headset and your PC's graphics card. Logs help: open CreoleCast on the PC and press <b>Save logs</b> (or right-click its icon, then <b>Save logs for support</b>), and attach the zip it saves to your desktop. It holds CreoleCast's and SteamVR's logs, not your pairings. Nothing is sent anywhere unless you send it.</p>
+  <p>Or ask on CreoleCast's <a href="https://discord.gg/XJzeZBkf7q">Discord server</a>, where other players can help too.</p>
+</main>
+<footer>
+  <nav><a href="support.html">Support</a><a href="https://discord.gg/XJzeZBkf7q">Discord</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="licenses.html">Licences</a></nav>
+  <p>© 2026 CreoleVR. CreoleCast isn't affiliated with Meta or Valve. Meta Quest is a trademark of Meta Platforms, Inc.; SteamVR of Valve Corporation.</p>
+</footer>
+</body>
+</html>

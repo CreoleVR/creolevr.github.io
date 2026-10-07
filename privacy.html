@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CreoleCast Privacy Policy</title>
+<meta name="description" content="What CreoleCast sends, where, and what it keeps: everything stays between your headset and your own PC.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="img/icon-180.png" sizes="180x180" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta name="theme-color" content="#121417">
+</head>
+<body>
+<header>
+  <a class="brand" href="./"><img src="img/headset-small.png" alt="" width="40" height="26"> CreoleCast</a>
+  <nav>
+    <a href="./#download">Download</a>
+    <a href="support.html">Support</a>
+    <a href="https://discord.gg/XJzeZBkf7q">Discord</a>
+  </nav>
+</header>
+<main class="prose">
+  <h1>Privacy policy</h1>
+  <p class="small">Effective 1 October 2026</p>
+  <p>CreoleCast streams SteamVR from your own PC to your Meta Quest headset. It is made by CreoleVR (<a href="https://creolevr.github.io">creolevr.github.io</a>, <a href="mailto:creolevr@gmail.com">creolevr@gmail.com</a>).</p>
+
+  <p><b>The short version:</b></p>
+  <ul>
+    <li>CreoleCast works only between your headset and your own PC, on your local network.</li>
+    <li>CreoleVR runs no servers that receive your data, collects no analytics, and has no accounts.</li>
+    <li>Nothing about you reaches us unless you email it to us.</li>
+  </ul>
+
+  <h2>What goes from the headset to your PC</h2>
+  <p>While CreoleCast runs, the headset app sends these to the PC it's paired with, and to no other device:</p>
+  <div class="table">
+  <table>
+    <tr><th>What</th><th>Why</th><th>When</th></tr>
+    <tr><td>Head, hand and controller positions, and button presses</td><td>So SteamVR and your games follow you</td><td>While streaming</td></tr>
+    <tr><td>Where your eyes look (the gaze direction, and how sure the headset is of it)</td><td>To put the most detail where you look. SteamVR apps that support eye tracking can read it on your PC</td><td>While streaming, if you allowed eye tracking and the setting is on</td></tr>
+    <tr><td>Your facial expressions (the headset's face-tracking values)</td><td>For VRCFaceTracking on your PC, which moves your avatar's face</td><td>Only while VRCFaceTracking asks for them, if you allowed face tracking and the setting is on</td></tr>
+    <tr><td>Your microphone</td><td>It becomes a microphone on your PC, which your PC's apps can use</td><td>Only while the PC asks for it, if you allowed the microphone and the setting is on</td></tr>
+    <tr><td>How your body moves (where the headset's body tracking puts your hips, chest, elbows, knees and feet)</td><td>They become SteamVR trackers on your PC, so full-body games follow your body</td><td>While streaming, if you allowed body tracking and the setting is on</td></tr>
+    <tr><td>The shape of your hands (where the headset's hand tracking puts your wrists and each finger joint)</td><td>Your hands become SteamVR's controllers on your PC, fingers and all, when you put the controllers down</td><td>While streaming, if the Hand tracking setting is on</td></tr>
+    <tr><td>The headset's battery level, and whether it's charging</td><td>SteamVR shows it</td><td>While streaming</td></tr>
+    <tr><td>The headset's model and display details</td><td>So the PC sizes the image for your headset</td><td>While streaming</td></tr>
+  </table>
+  </div>
+  <p>The headset asks your permission before it sends where you look, your facial expressions, how your body moves, or your microphone. Android asks for each permission in its own window. You can turn each one off at any time, in CreoleCast's Settings or in the headset's Settings (Privacy &amp; safety, App permissions).</p>
+  <p>The headset never keeps any of this: it goes straight to your PC. Where your eyes look, your facial expressions, the shape of your hands and how your body moves are the processed values Meta's system gives apps, never camera images. Once they're on your PC, the programs you use there (SteamVR, VRCFaceTracking, your games) handle them under their own privacy policies.</p>
+
+  <h2>What stays on your devices</h2>
+  <ul>
+    <li><b>Pairing:</b> each side keeps a random ID for the other, its name (the headset's model; the PC's computer name) and the shared key that proves the pairing. The PC keeps these in <code>%LOCALAPPDATA%\CreoleCast</code>, the headset in CreoleCast's app storage.</li>
+    <li><b>Settings:</b> your CreoleCast settings, on the headset. On the PC, in the same folder: the headset's display details (so SteamVR can start before the headset connects), which audio devices were Windows' defaults (so CreoleCast can put them back), and the PC app's own settings.</li>
+    <li><b>Logs:</b> diagnostic logs on the PC (CreoleCast's folder, its updater's in its install folder, and SteamVR's log folder) and on the headset (Android's system log). They stay there. <b>Save logs</b>, in the PC app's window or menu, only puts them in a zip on your desktop, for you to send us if you want to.</li>
+  </ul>
+  <p>Pairing uses your local network: the headset announces itself with broadcasts that only devices on the same network receive. Pairing and the stream are protected by a key the two devices agree on when you pair them, after you confirm the same code on both.</p>
+
+  <h2>Updates</h2>
+  <p>Once a day, CreoleCast on the PC checks for a newer version by reading a small file from this website (<code>creolevr.github.io/latest.json</code>). It installs an update by itself while SteamVR isn't running, and when you press Connect on a headset whose CreoleCast is newer than the PC's (the two have to match to stream). Like any web request, these carry your IP address and CreoleCast's version. The website and the downloads are hosted by GitHub, which handles those requests under the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>; CreoleVR doesn't receive them. To turn the daily check off, untick <b>Update automatically</b> in the CreoleCast icon's menu.</p>
+
+  <h2>Meta</h2>
+  <p>To check that you got CreoleCast from the Meta Horizon Store, the app uses Meta's Platform SDK. That check runs between the app and Meta's software on the headset; CreoleVR receives nothing from it. Meta handles your account and store data under <a href="https://www.meta.com/legal/privacy-policy/">Meta's privacy policy</a>.</p>
+
+  <h2>If you contact us</h2>
+  <p>If you email support, we see what you send us: your email address, your message and any logs you attach. We use it only to help you, and delete it when your request is resolved, or sooner if you ask. The law lets us use it because you asked us for help (our legitimate interest in answering you, GDPR article 6(1)(f)).</p>
+  <p>If you ask for help on CreoleCast's Discord server, everyone on the server can see what you post there, and Discord handles it under the <a href="https://discord.com/privacy">Discord Privacy Policy</a>.</p>
+
+  <h2>Deleting your data</h2>
+  <p>CreoleVR holds no data about you, except support emails you've sent (ask us at <a href="mailto:creolevr@gmail.com">creolevr@gmail.com</a> and we'll delete them). On your devices:</p>
+  <ul>
+    <li>On the headset: <b>Forget</b> removes a pairing. Uninstalling CreoleCast removes everything it kept.</li>
+    <li>On the PC: <b>Forget</b> in the CreoleCast icon's menu removes a pairing. Uninstalling CreoleCast removes the app, and asks whether to delete <code>%LOCALAPPDATA%\CreoleCast</code> too, which you can also delete yourself.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>CreoleVR is responsible for the support emails it receives. You can ask us to show you what we hold about you, correct it or delete it, or object to how we use it: email <a href="mailto:creolevr@gmail.com">creolevr@gmail.com</a>. You can also complain to the data protection authority where you live.</p>
+
+  <h2>Children</h2>
+  <p>CreoleCast is not directed at children under 13, and we don't knowingly collect anything from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If what CreoleCast sends or keeps changes, this page changes first, with a new date at the top.</p>
+</main>
+<footer>
+  <nav><a href="support.html">Support</a><a href="https://discord.gg/XJzeZBkf7q">Discord</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="licenses.html">Licences</a></nav>
+  <p>© 2026 CreoleVR. CreoleCast isn't affiliated with Meta or Valve. Meta Quest is a trademark of Meta Platforms, Inc.; SteamVR of Valve Corporation.</p>
+</footer>
+</body>
+</html>
